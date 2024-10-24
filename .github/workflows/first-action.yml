@@ -11,5 +11,5 @@ jobs:
         run : echo "My first workflow"
       - name: Check java version installed
         run: |
-          java -v
+          java --version
           ls
