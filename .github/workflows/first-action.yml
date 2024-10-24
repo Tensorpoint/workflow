@@ -21,8 +21,9 @@ jobs:
     steps:
       - name: print window directory
         run : pwd
-      - name: print error
-        run : cls
+      - name: pass error
+        run : pwd
+        
 
   dependent-job:
     runs-on: windows-latest
