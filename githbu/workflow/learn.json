@@ -1,0 +1,51 @@
+{
+    "4566": "saveeeee",
+    "key": "value",
+    "special-cha": "cpecia : save",
+    "special": "i love 'yaml' code",
+    "doulbe_line": " i line to make extra line \n",
+    "array": [
+      "hello",
+      "world"
+    ],
+    "json_array": [
+      "say hello",
+      "say my name"
+    ],
+    "numbers": 10000,
+    "Boolean": true,
+    "null": null,
+    "same_null": null,
+    "objects (like maps)": {
+      "key": "value",
+      "another_key": "value",
+      "nested object": {
+        "key": "value",
+        "value": "key"
+      }
+    },
+    "json type": {
+      "key": "value",
+      "same": "value",
+      "object": {
+        "key": "value",
+        "same": {
+          "null": null
+        }
+      }
+    },
+    "sequesnce": [
+      "item1",
+      "item 2",
+      {
+        "key": null,
+        "another_key": {},
+        "same": {
+          "value": [
+            "nothing",
+            "nothing"
+          ]
+        }
+      }
+    ]
+  }

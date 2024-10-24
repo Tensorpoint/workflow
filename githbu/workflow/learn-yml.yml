@@ -1,0 +1,60 @@
+key: value
+4566: saveeeee
+
+special-cha: "cpecia : save"
+
+special: 'i love ''yaml'' code'
+doulbe_line : " i line to make extra line \n"
+array:
+  - hello
+  - world
+json_array: [say hello, say my name]
+numbers :  10000
+
+Boolean: true
+null: null
+same_null : ~
+
+objects (like maps):
+  key: value
+  another_key: value
+  nested object:
+    key: value
+    value: key
+
+json type : {
+  key: value,
+  same: value,
+  object: {
+    key: value,
+    same: {
+      null: null
+    }
+  }
+}
+
+sequesnce:
+  - item1
+  - item 2
+  - - nested arrary 1
+    - nested array 2
+  - key: null
+    another_key: {
+
+    }
+    same:
+      value:
+        - nothing
+        
+        
+        - nothing
+
+
+literal block: |-
+  first block
+  second block
+
+folded block: >-
+  first line
+
+  second line

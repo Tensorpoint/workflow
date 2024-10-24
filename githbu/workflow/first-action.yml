@@ -1,0 +1,15 @@
+name: Ogbu isreal
+
+push:
+  - push
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-lates
+    steps:
+      - name: echo a string
+        run : echo "My first workflow"
+      - name: Check java version installed
+        run: |
+          java -v
+          ls
