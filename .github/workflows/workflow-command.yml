@@ -16,5 +16,5 @@ jobs:
                 echo ":: endgroup"
             - name: Masking data
               run: echo "::add-mask::Secret key"
-            - name:
-              run: echo "Secret key"
+            - name: print masked value
+              run: echo "Secret key"  

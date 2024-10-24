@@ -1,0 +1,46 @@
+name: working dirs and shells
+
+on: 
+  - push
+
+defaults:
+    run:
+      shell: bash
+
+jobs:
+    check-python-version:
+        runs-on: ubuntu-latest
+        steps:
+          - name: check working directory
+            run: |
+              pwd
+              ls -a
+              echo $GITHUB_SHA
+              echo $GITHUB_REPOSITORY
+              echo $GITHUB_WORKSPACE
+
+
+    display-working-dir-run-python-code:
+        runs-on: windows-latest
+        needs: check-python-version
+        steps:
+            - name: Display working directory
+              shell: bash
+              run: |
+                pwd
+                echo $env.GITHUB_SHA
+                echo $env.GITHUB_REPOSITORY
+                echo $env.GITHUB_WORKSPACE
+            - name: 
+              shell: python
+              run: |
+                import json
+
+                value = {
+                    "signupOtp": "048743",
+                    "email": "ogbuprecious123@gmail.com ",
+                    "nin": "88092808608",
+                }
+
+                print(json.dumps(value))
+
