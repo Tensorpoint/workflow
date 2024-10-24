@@ -7,4 +7,14 @@ jobs:
         runs-on: windows-latest
         steps:
             - name: echo spec
-              run: pwd
+              run: pwd  
+            - name: group logs
+              run: |
+                echo "::group:: My group list"
+                echo "Inside group"
+                echo "Also in a group"
+                echo ":: endgroup"
+            - name: Masking data
+              run: echo "::add-mask::Secret key"
+            - name:
+              run: echo "Secret key"
