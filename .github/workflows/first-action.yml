@@ -1,4 +1,4 @@
-name: Ogbu isreal
+name: first run
 
 on:
   - push
@@ -23,7 +23,7 @@ jobs:
         run : pwd
       - name: pass error
         run : pwd
-        
+
 
   dependent-job:
     runs-on: windows-latest

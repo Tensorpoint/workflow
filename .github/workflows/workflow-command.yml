@@ -1,0 +1,10 @@
+name: workflow-command
+
+on: [push]
+
+jobs:
+    lets-start:
+        runs-on: windows-latest
+        steps:
+            - name: echo spec
+              run: pwd
