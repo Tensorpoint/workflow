@@ -44,3 +44,13 @@ jobs:
 
                 print(json.dumps(value))
 
+    use-power-shell:
+        runs-on: windows-latest
+        steps:
+            - name: Run some command on shell
+              shell: pwsh
+              run: |
+                pwd
+                ls
+            - name: Just echo something
+              run: echo " I love coding"
