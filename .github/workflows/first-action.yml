@@ -13,6 +13,7 @@ jobs:
         run: |
           java --version
           ls
+          
   parallel-job-runs:
     runs-on: windows-latest
     needs:
@@ -22,3 +23,13 @@ jobs:
         run : pwd
       - name: print error
         run : same
+
+  dependent-job:
+    runs-on: windows-latest
+    steps: 
+      - name: check other programming vaersion
+        run: |
+          node --version
+          python --version
+          java --version
+
