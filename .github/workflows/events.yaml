@@ -1,9 +1,15 @@
 name: repository event
 
-on: 
-  - push
-  - issues
-  - pull_request
+on:
+  push:
+  issues:
+    types:
+      - opened
+  pull_request:
+    types:
+      - opened
+      - assigned
+      - synchronize
 
 jobs:
     checkout-events:
