@@ -15,3 +15,6 @@ jobs:
               echo $GITHUB_REF
           - name: checkout here now
             uses: actions/checkout@v3
+          - name: print all files
+            run: ls -a
+
