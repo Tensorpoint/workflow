@@ -1,0 +1,16 @@
+name: workflow A
+
+on:
+    workflow_run:
+      workflows:
+        - repository event
+      types:
+        - completed
+
+jobs:
+    run-repo-evernt-before-this:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print this workflow
+              run: echo 'I was called because 'repository event' workflow was completed'
+              
