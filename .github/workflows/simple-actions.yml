@@ -1,0 +1,17 @@
+name : simple action and using output
+
+on:
+  - push
+
+jobs:
+    simple-actions:
+        runs-on: ubuntu-latest
+        steps:
+          - name: run simple action or first action created
+            id: greet
+            uses: actions/hello-world-javascript-action@main
+            with:
+                who-to-greet: Ali
+          - name: Get the ouptut of the above operation
+            run: echo "${{steps.greet.outputs.time }}" 
+
