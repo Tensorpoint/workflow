@@ -13,5 +13,4 @@ jobs:
             with:
                 who-to-greet: Ali
           - name: Get the ouptut of the above operation
-            run: echo "${{steps.greet.outputs.time }}" 
-
+            run: echo "${{ steps.greet.outputs.time }}"
