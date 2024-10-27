@@ -1,0 +1,11 @@
+name: manual trigger
+
+on:
+    workflow_dispatch:
+
+
+jobs:
+    manual-workflow:
+        runs-on: ubuntu-latest
+        steps:
+            - run: ech0 $GITHUB_REF
