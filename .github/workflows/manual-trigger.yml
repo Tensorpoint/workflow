@@ -8,4 +8,4 @@ jobs:
     manual-workflow:
         runs-on: ubuntu-latest
         steps:
-            - run: ech0 $GITHUB_REF
+            - run: echo $GITHUB_REF
