@@ -9,7 +9,7 @@ jobs:
         - name: before checkout
           run: |
              ls -a
-        - name: action checkout
+        - name: action checkout takes ace now
           uses: actions/checkout@v3
         - name: list all files
           run: |
