@@ -10,3 +10,8 @@ jobs:
         steps:
             - name: test first manual workflow
               run: echo $GITHUB_REF
+    test-nother:
+        runs-on: ubuntu-latest
+        steps:
+            - name: second test
+              run: echo "I love my job as a software engineer"
