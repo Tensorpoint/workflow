@@ -27,7 +27,7 @@ jobs:
           echo '${{ toJSON(secrets) }}'
           echo '${{ toJSON(steps) }}'
           echo '${{ toJSON(runner) }}'
-    else:
+    else-if:
       steps:
         - name: Else statement
           run: echo ${{ github.event_name }}
