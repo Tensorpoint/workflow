@@ -3,6 +3,18 @@ name: checkout
 on: [push]
 
 jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: re-learning some of my oast works
+        run: |
+          echo " i love my life"
+          ls -a
+      - name: now use action
+        use: action/checkout@main
+      - name: list all i have checked out
+        run: |
+          ls -a
     checkout-using-actions:
       runs-on: ubuntu-latest
       steps:

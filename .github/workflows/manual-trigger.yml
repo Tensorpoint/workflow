@@ -5,12 +5,12 @@ on:
 
 
 jobs:
-    manual-workflow:
+    job-0:
         runs-on: ubuntu-latest
         steps:
             - name: test first manual workflow
               run: echo $GITHUB_REF
-    test-nother:
+    job-1:
         runs-on: ubuntu-latest
         steps:
             - name: second test
