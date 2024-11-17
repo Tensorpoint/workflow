@@ -7,6 +7,7 @@ run-name: "Expression-and-context by ${{ github.actor }}, events: ${{ github.eve
 jobs:
   using-expression-and-context:
     runs-on: ubuntu-latest
+    if: github.event_name == push
     steps:
       - name: expressions
         id: expressions
@@ -26,3 +27,7 @@ jobs:
           echo '${{ toJSON(secrets) }}'
           echo '${{ toJSON(steps) }}'
           echo '${{ toJSON(runner) }}'
+    else:
+      steps:
+        - name: Else statement
+          run: echo ${{ github.event_name }}
